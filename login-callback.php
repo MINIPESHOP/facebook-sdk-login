@@ -10,8 +10,8 @@ use Facebook\FacebookRedirectLoginHelper;
 
 
 $fb = new Facebook\Facebook([
-  'app_id' => '1957494807843710',
-  'app_secret' => '241505b84ae404fabb97af53f49f0f74',
+  'app_id' => 'App ID ของท่าน',
+  'app_secret' => 'Secret ID ของท่าน',
   'default_graph_version' => 'v2.5',
 ]);
 
@@ -48,6 +48,7 @@ if (isset($accessToken)) {
   //echo 'Email: ' . $user['email'];
   //echo 'Link: ' . $user['link'];
 
+	//เชื่อมฐานข้อมูล
 	$objConnect = mysql_connect("localhost","root","") or die(mysql_error());
 	$objDB = mysql_select_db("loginface");
 	mysql_query("SET NAMES UTF8");
@@ -85,7 +86,7 @@ if (isset($accessToken)) {
 	}
 
 	mysql_close();
-
+//สิ้นสุดการเชื่อมต่อ
 
 }
 
