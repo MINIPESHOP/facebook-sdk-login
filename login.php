@@ -5,15 +5,6 @@ form {
     border: 3px solid #f1f1f1;
 }
 
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
 button {
     background-color: #4CAF50;
     color: white;
@@ -89,7 +80,7 @@ $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email', 'user_likes']; // optional
 
 $loginUrl = $helper->getLoginUrl('http://45.76.146.70/login-callback.php', $permissions); //ที่อยู่ไฟล์ login-callback.php
-  <form action="" method="get">
+echo <form action="" method="get">
   <button type="submit">Login</button>
 <a href="' . $loginUrl . '">Login !</a>
 </button>
