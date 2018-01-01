@@ -10,8 +10,8 @@ use Facebook\FacebookRedirectLoginHelper;
 
 
 $fb = new Facebook\Facebook([
-  'app_id' => '1957494807843710',
-  'app_secret' => '241505b84ae404fabb97af53f49f0f74',
+  'app_id' => 'App ID ของท่าน',
+  'app_secret' => 'Secret ID ของท่าน',
   'default_graph_version' => 'v2.5',
 ]);
 
@@ -19,7 +19,7 @@ $helper = $fb->getRedirectLoginHelper();
 
 $permissions = ['email', 'user_likes']; // optional
 
-$loginUrl = $helper->getLoginUrl('http://45.76.146.70/login-callback.php', $permissions);
+$loginUrl = $helper->getLoginUrl('http://45.76.146.70/login-callback.php', $permissions); //ที่อยู่ไฟล์ login-callback.php
 
 echo '<a href="' . $loginUrl . '">Login !</a>';
 ?>
