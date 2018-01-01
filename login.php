@@ -83,5 +83,6 @@ $loginUrl = $helper->getLoginUrl('http://45.76.146.70/login-callback.php', $perm
 echo "<form action="">
   <button type="submit">
 <a href="' . $loginUrl . '">Login !</a>
-</button>";
+</button>
+</form>";
 ?>
