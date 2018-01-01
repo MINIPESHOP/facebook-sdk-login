@@ -81,7 +81,7 @@ $permissions = ['email', 'user_likes']; // optional
 
 $loginUrl = $helper->getLoginUrl('http://45.76.146.70/login-callback.php', $permissions); //ที่อยู่ไฟล์ login-callback.php
 echo "<form action="">
-  <button type="submit">Login</button>
+  <button type="submit">
 <a href="' . $loginUrl . '">Login !</a>
 </button>";
 ?>
