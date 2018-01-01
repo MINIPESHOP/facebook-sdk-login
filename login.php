@@ -80,8 +80,8 @@ $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email', 'user_likes']; // optional
 
 $loginUrl = $helper->getLoginUrl('http://45.76.146.70/login-callback.php', $permissions); //ที่อยู่ไฟล์ login-callback.php
-echo <form action="" method="get">
+echo "<form action="" method="get">
   <button type="submit">Login</button>
 <a href="' . $loginUrl . '">Login !</a>
-</button>
+</button>";
 ?>
